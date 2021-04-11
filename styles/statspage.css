@@ -1,0 +1,386 @@
+/* GENERAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial';
+}
+body{
+    /*background-image: linear-gradient(rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.9) 100%), url('images/background2.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    height: 100vh; */
+    background-color: #1f1f1f;
+}
+.flex1{flex: 1;}
+.flex2{flex: 2;}
+.flex3{flex: 3;}
+.flex4{flex: 4;}
+.flexbox{
+    display: flex;
+}
+.flex-thisbox{
+    flex: 4;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 24px;
+    color:#fff;
+}
+.fakeImg{
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.fthr{
+    height: 1px;
+    width: 60%;
+    background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#444 50%,hsla(0,0%,100%,0));
+    margin: 10px auto;
+}
+.fthr1{
+    height: 2px;
+    width: 80%;
+    background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#444 50%,hsla(0,0%,100%,0));
+    margin: 5px auto;
+}
+.fthr2{
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#81001a 50%,hsla(0,0%,100%,0));
+}
+.fthr3{
+    height: 4px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#81001a 50%,hsla(0,0%,100%,0));
+}
+details{
+    width: 100%;
+    color: #fff;
+    border:unset;
+    font-family: 'Roboto';
+    font-size: 24px;
+    text-align: center;
+    margin: 15px auto;
+    overflow: hidden;
+}
+summary{
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+}
+details>summary { 
+    list-style: none;
+}
+summary::marker {
+    display: none
+ }
+
+summary::after {
+    content: "⏏";
+    transform: rotate(0.5turn);
+    float: right;
+    color: #3f3f3f;
+}
+details[open] summary:after {
+    content: "⏏";
+    transform: unset;
+}
+
+/* PLAYER INFO | FIRST SECTION */
+
+.playerInfo{
+    background: url('../images/bg/image1.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    display: flex;
+    width: 100%;
+    margin: 75px 0px 15px;
+    border-radius: 5px;
+}
+.playerAvatar{
+    height: 96px;
+    display: block;
+    margin: 10px;
+    float: right;
+    border-radius: 5px;
+    border: 2px solid rgb(78, 211, 255);
+}
+.playerInfoBox{
+    background: rgba(0,0,0,0.8);
+    width: 98%;
+    border-radius: 5px;
+}
+.playerName{
+    padding: 5px;
+    margin: 10px auto 0px;
+}
+.playerSpec{
+    display: block;
+    font-size: 12px;
+    color: #E94B3CFF;
+    margin: 0;
+    padding-bottom: 15px;
+    padding: 5px;
+}
+
+/* PLAYER STATS | SECOND SECTION */
+
+.singleStatBox{
+    width: 100%;
+    background: #292929;
+    margin: 15px auto 15px;
+    border-radius: 5px;
+}
+.playerStatsAnimated{
+    width: 100%;
+    margin: 15px auto;
+}
+.statsBox{
+    width: 100%;
+    background: #292929;
+    margin: 15px 0px 15px;
+    border-radius: 5px;
+}
+.statImg{
+    height: 96px;
+    display: block;
+    margin: 0 auto;
+}
+.statNumber, .statName{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.statNumber{
+    color: #E94B3CFF;
+}
+.statName{
+    font-weight: normal;
+}
+.characterImg{
+    height: 192px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*  red: #e50806;
+*   purple: #b05dc3;
+*   green: #43af0a;
+*   yellow: #beba49;
+*   bronze: #9b9373;
+*/
+.rankSurv{
+    background-image: url("../images/ranks/bronzeSurv.png");
+    color: #9b9373;
+}
+.rankKiller{
+    background-image: url("../images/ranks/bronzeKiller.png");
+    color: #9b9373;
+}
+.rankSurv, .rankKiller{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+.rankValue{
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+    color: inherit;
+}
+.tableDiv{
+    width: 100%;
+    background-color: #292929;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+table{
+    border-radius: 5px;
+    width: 100%;
+    border-spacing: unset;
+}
+table tr:nth-child(odd){
+    background-color: #3f3f3f;
+}
+table tr th{
+    padding: 5px;
+    width: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+table tr th:last-child{
+    color: #E94B3CFF;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px){
+    /* GENERAL STYLES */
+    .yAlignParent{
+        position: relative;
+    }
+    .yAlignChild{
+        position: absolute;
+        top:25%;
+        left:0;
+    }
+    .fakeImg{
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+    /* SECTION HEADER */
+    .sectionHeader{
+        width: 100%;
+        
+    }
+    /* PLAYER INFO | FIRST SECTION */
+    .playerInfoBox{
+        width: 80%;
+    }
+
+    /* PLAYER STATS | SECOND SECTION */
+    .singleStatBox{
+        width: 100%;
+        height: min-content;
+        display: flex;
+    }
+    .singleStatBox p{
+        text-align: right;
+    }
+    .singleStatBox h1{
+        margin: 5px;
+        text-align: left;
+        display: inline;
+    }
+    .playerStatsAnimated{
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .statsBox{
+        flex:1;
+        margin: 0 5px;
+    }
+    .statsBox:first-child{
+        margin-left: 0;
+    }
+    .statsBox:last-child{
+        margin-right: 0;
+    }
+    .characterImg{
+        margin-right: 15px;
+    }
+    .characterH1 h1{
+        display: block;
+    }
+    #playtimePlace{
+        font-size: 36px;
+    }
+    #bloodpointsPlace{
+        font-size: 36px;
+    }
+    .statName{
+        font-size: 24px;
+    }
+    .rankSurv, .rankKiller{
+        margin-top: 20px;
+    }    
+}
+
+@media (min-width: 1024px){
+    /* GENERAL STYLES */
+    h1{
+        font-size: 28px;
+    }
+    .yAlignChild{
+        top:27%;
+    }
+    details{
+        font-size: 24px;
+        font-weight: normal;
+    }
+    
+    /* PLAYER INFO | FIRST SECTION */
+    .playerName{
+        font-size: 42px;
+    }
+    .playerSpec{
+        font-size: 18px;
+    }
+    .playerInfo{
+        padding: 40px 0px;
+        background-position-y: 20%;
+    }
+    .playerInfoBox{
+        width: 65%;
+    }
+    /* PLAYER STATS | SECOND SECTION */
+    #bloodpointsPlace{
+        font-size: 42px;
+    }
+    .singleStatBox h1{
+        font-size: 36px;
+    }
+    #playtimePlace{
+        font-size: 42px;
+    }
+    .rankKiller, .rankSurv{
+        margin-top: 30px;
+    }
+    .statImg{
+        height: 128px;
+    }
+    .characterImg{
+        height: 256px;
+    }
+    .tableDiv{
+        margin-bottom: 75px;
+    }
+    table tr th{
+        font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 1600px){
+    /* GENERAL STYLES */
+    .container{
+        width: 1450px;
+        margin: 0 auto;
+    }
+    .flex-thisbox{
+        flex: 3;
+    }
+   
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+ 
+@keyframes sweep {
+  0%    {
+      opacity: 0;
+  }
+  100%  {
+      opacity: 1;
+  }
+}

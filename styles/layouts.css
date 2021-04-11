@@ -1,0 +1,343 @@
+/* NAVIGATION */
+.navbar{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.menuLinksImg{
+    width: 36px;
+}
+        /* MOBILE MENU */
+.menuIcon{
+    width: 32px;
+    padding: 9px;
+    cursor: pointer;
+}
+.logo{
+    font-size: 24px;
+    float: right;
+    padding: 11px;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1a1a1a;
+    z-index: 10;
+    overflow: hidden;
+    transition: .2s;
+    
+}
+.menuElements a {
+    width: 100%;
+    padding: 15px;
+    float: left;
+    font-size: 24px;
+}
+.menuElements a:hover{
+    background-color: #E94B3CFF;
+}
+.menuElements a:first-child:hover{
+    background-color: unset;
+}
+.closeBtn{
+    cursor: pointer;
+}
+.tfoot{
+    display: block;
+    color: rgb(59, 59, 59);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight:normal;
+}
+        /* DESKTOP MENU */
+.desktopMenu{
+    display: none;
+    position: relative;
+}
+.logoDesktop h1{
+    font-size: 24px;
+    padding: 11px;
+    text-align: center;
+    cursor: default;
+    float: left;
+}
+.links{
+    display: flex;
+    position: relative;
+}
+.links a{
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 11px;
+    text-align: center;
+    transition: 0.2s;
+}
+.links a:hover{
+    background-color: #E94B3CFF;
+}
+.links a:last-child:hover{
+    background-color: unset;
+    cursor: pointer;
+}
+.search-player{
+    padding: 15px 9px;
+    display: block;
+    width: 95%;
+    margin:6px auto;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: unset;
+}
+.search-player:focus{
+    outline: none;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    top:100%;
+    right: 0;
+    background-color: #2b2b2b;
+    padding: 15px 0;
+}
+.dropdown a{
+    display: list-item;
+    list-style-type: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.dropdown a:hover{
+    background-color: #E94B3CFF;
+}
+
+/* SECTION HEADER */
+.sectionHeader{
+    width:100%;
+    margin:15px auto;
+    margin-top: 45px;
+}
+
+/* FOOTER | LAST SECTION */
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+.footer p{
+    color:rgb(175, 175, 175);
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .1;
+}
+.footer .claim{
+    padding-top: 20px;
+    line-height: unset;
+}
+.linksFooter{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+}
+.linksFooter a{
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 11px;
+    text-align: center;
+}
+.ftLinksImg{
+    width: 24px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.ftLinksImg:hover{
+    background-color: #E94B3CFF;
+}
+.copyright{
+    width: 80%;
+    height: 25px;
+    margin: 20px auto 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #3f3f3f;
+    color: rgb(175, 175, 175);
+    padding: 5px;
+    text-align: center;
+    line-height: 1;
+    font-size: 10px;
+}
+
+/* PRIVACY POLICY */
+.privacyDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 998;  
+}
+.privacy{
+    width: 100%;
+    min-height: 100px;
+    background-color: #1a1a1a;
+    display: block;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    z-index: 999;    
+    box-sizing: border-box;
+}
+.privacy h1{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.privacy button{
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #E94B3CFF;
+    color: #fff;
+    border:unset;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;  
+}
+
+
+@media (min-width: 768px){
+    /* PRIVACY POLICY */
+    .privacy{
+        min-height: unset;
+        height: 60px;
+    }
+    /* FOOTER | LAST SECTION */
+    .copyright{
+        width: 60%;
+    }
+    .linksFooter{
+        width: 60%;
+    }
+    .authorInfo{
+        display: flex;
+    }
+}
+
+@media (min-width: 1024px){
+    /* NAVIGATION */
+    .menu{
+        display: none;
+    }
+    .menuIcon{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .desktopMenu{
+        display: flex;
+    }
+    .menuLinksImg{
+        width: unset;
+        height: 22px;
+    }
+    .search-player{
+        padding: 9px;
+        width: 80%;
+    }
+    /* PRIVACY POLICY */
+    .privacy{
+        height: 70px;
+    }
+    .privacy h1{
+        font-size: 24px;
+    }
+    .privacy button{
+        width: 200px;
+        font-size: 20px;
+    }
+    /* FOOTER | LAST SECTION */
+    .ftLinksImg{
+        width: 32px;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+    .copyright{
+        font-size: unset;
+        width: 620px;
+    }
+    .linksFooter{
+        width: 500px;
+    }
+}
+
+@media (min-width: 1600px){
+    /* NAVIGATION */
+    .desktopMenu{
+        width: 1550px;
+        margin: 0 auto;
+    }
+    .desktopMenu h1{
+        float: left;
+    }
+    /* FOOTER | LAST SECTION */
+    .authorInfo{
+        width: 1450px;
+        margin: 0 auto;
+    }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
