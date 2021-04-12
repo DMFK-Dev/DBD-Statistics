@@ -8,5 +8,5 @@
 ---
 
 ## Authors
-### Front-End: [Dominik "Domrex" Misiek](https://github.com/dmisiek)
+### Front-End: [Dominik Misiek](https://github.com/dmisiek)
 ### Back-End: [Filip Krzyżanowski](https://github.com/fkrzski)
