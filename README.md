@@ -3,7 +3,7 @@
 
 <br>
 
-### We plan to develop the project, including adding more statistics, automating the setting of dates for individual events and most importantly: translating the application into [our own MVC framework](https://github.com/fkrzski/Basic-PHP-MVC-Template), which has recently started to be created.
+### We plan to develop the project, including adding more statistics, automating the setting of dates for individual events and most importantly: translating the application into [our own MVC framework](https://github.com/fkrzski/PHP-Kadarka-Framework), which has recently started to be created.
 
 ---
 
